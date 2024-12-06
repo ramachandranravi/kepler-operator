@@ -3,10 +3,7 @@
     "list": [
       {
         "builtIn": 1,
-        "datasource": {
-          "type": "grafana",
-          "uid": "-- Grafana --"
-        },
+        "datasource": "-- Grafana --",
         "enable": true,
         "hide": true,
         "iconColor": "rgba(0, 211, 255, 1)",
@@ -22,7 +19,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "${prometheus-grafanadatasource}"
+          "uid": "${datasource}"
         },
         "enable": true,
         "expr": "sum(changes(prometheus_config_last_reload_success_timestamp_seconds{instance=~\"$instance\"}[10m])) by (instance)",
@@ -37,7 +34,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "${prometheus-grafanadatasource}"
+          "uid": "${datasource}"
         },
         "enable": true,
         "expr": "count(sum(up{instance=\"$instance\"}) by (instance) < 1)",
@@ -65,7 +62,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -81,7 +78,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Percentage of uptime during the most recent $interval period.  Change the period with the 'interval' dropdown above.",
       "fieldConfig": {
@@ -163,7 +160,7 @@
       "columns": [],
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Servers which are DOWN RIGHT NOW! \nFIX THEM!!",
       "fontSize": "100%",
@@ -244,7 +241,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Total number of time series in prometheus",
       "fieldConfig": {
@@ -323,7 +320,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -399,7 +396,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -415,7 +412,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "The total number of rule group evaluations missed due to slow rule group evaluation.",
       "fieldConfig": {
@@ -494,7 +491,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "The total number of rule group evaluations skipped due to throttled metric storage.",
       "fieldConfig": {
@@ -573,7 +570,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Total number of scrapes that hit the sample limit and were rejected.",
       "fieldConfig": {
@@ -652,7 +649,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Number of times the database failed to reload block data from disk.",
       "fieldConfig": {
@@ -731,7 +728,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Sum of all skipped scrapes",
       "fieldConfig": {
@@ -811,7 +808,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -831,7 +828,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "All non-zero failures and errors",
       "fill": 1,
@@ -1067,7 +1064,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -1087,7 +1084,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1175,7 +1172,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1258,7 +1255,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -1278,7 +1275,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1364,7 +1361,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1459,7 +1456,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -1481,7 +1478,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Rate of total number of appended samples",
       "fill": 1,
@@ -1565,7 +1562,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -1585,7 +1582,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Total number of syncs that were executed on a scrape pool.",
       "fill": 1,
@@ -1673,7 +1670,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Actual interval to sync the scrape pool.",
       "fill": 1,
@@ -1757,7 +1754,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -1777,7 +1774,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -1862,7 +1859,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Total number of rejected scrapes",
       "fill": 1,
@@ -1974,7 +1971,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -1994,7 +1991,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "The duration of rule group evaluations",
       "fill": 1,
@@ -2081,7 +2078,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -2166,7 +2163,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -2252,7 +2249,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "Rule-group evaluations \n - total\n - missed due to slow rule group evaluation\n - skipped due to throttled metric storage",
       "fill": 1,
@@ -2352,7 +2349,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -2372,7 +2369,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -2455,7 +2452,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -2475,7 +2472,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -2561,7 +2558,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -2646,7 +2643,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -2666,7 +2663,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "GC invocation durations",
       "fill": 1,
@@ -2748,7 +2745,7 @@
       "collapsed": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "gridPos": {
         "h": 1,
@@ -2768,7 +2765,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "description": "This is probably wrong!  Please help.",
       "fill": 1,
@@ -2997,7 +2994,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -3083,7 +3080,7 @@
       "dashes": false,
       "datasource": {
         "type": "prometheus",
-        "uid": "${prometheus-grafanadatasource}"
+        "uid": "${datasource}"
       },
       "fill": 1,
       "fillGradient": 0,
@@ -3181,7 +3178,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${prometheus-grafanadatasource}"
+          "uid": "${datasource}"
         },
         "definition": "",
         "hide": 0,
@@ -3210,7 +3207,7 @@
         },
         "datasource": {
           "type": "prometheus",
-          "uid": "${prometheus-grafanadatasource}"
+          "uid": "${datasource}"
         },
         "definition": "",
         "hide": 0,
